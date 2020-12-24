@@ -11,4 +11,4 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-PROMPT='%F{black}%K{white}%~ %#%f%k '
+PROMPT='%F{black}%K{white}%m:%~ %#%f%k '

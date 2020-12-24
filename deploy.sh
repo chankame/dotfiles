@@ -7,7 +7,8 @@ for f in .??*
 do
 	[ "$f" = '.git' ] && continue
 	[ "$f" = '.DS_Store' ] && continue
-	[ "$f##*." = 'swp' ] && continue
+	swp=${f##*.}
+	[ "$swp" = 'swp' ] && continue
 
 	ln -fsv $DOTFILES_DIR/$f ~
 done

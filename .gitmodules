@@ -1,3 +1,9 @@
 [submodule ".vim/pack/plugins/start/nerdtree"]
 	path = .vim/pack/plugins/start/nerdtree
 	url = https://github.com/preservim/nerdtree.git
+[submodule ".vim/pack/plugins/start/vim-elixir"]
+	path = .vim/pack/plugins/start/vim-elixir
+	url = https://github.com/elixir-editors/vim-elixir.git
+[submodule ".vim/pack/plugins/start/vim-terraform"]
+	path = .vim/pack/plugins/start/vim-terraform
+	url = https://github.com/hashivim/vim-terraform.git

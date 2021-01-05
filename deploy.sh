@@ -3,6 +3,8 @@
 cd `dirname $0`
 DOTFILES_DIR=`pwd`
 
+git submodule update --init
+
 for f in .??*
 do
 	[ "$f" = '.git' ] && continue

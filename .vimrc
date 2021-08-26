@@ -15,6 +15,7 @@ filetype plugin indent on
 hi Comment ctermfg=46
 hi NonText ctermfg=196
 hi SpecialKey ctermfg=8
+set background=dark
 set clipboard+=unnamed
 set encoding=utf-8
 set fileencodings=utf-8,eucjp,cp932
@@ -28,4 +29,5 @@ set nocompatible
 set noexpandtab
 set nowrap
 set number
-syntax on
+syntax enable
+colorscheme iceberg

@@ -1,7 +1,11 @@
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=1024
+SAVEHIST=8192
+setopt hist_ignore_all_dups
+setopt hist_ignore_dups
+setopt hist_reduce_blanks
+setopt share_history
 bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall

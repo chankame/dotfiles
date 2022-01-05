@@ -27,5 +27,8 @@ zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
 RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 
+source ~/dotfiles/submodule/zsh-kubectl-prompt/kubectl.zsh
+RPROMPT='%F{blue}($ZSH_KUBECTL_PROMPT)%f'$RPROMPT
+
 # Environment variables
 export EDITOR=vim

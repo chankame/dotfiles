@@ -10,3 +10,6 @@
 [submodule ".vim/pack/plugins/start/vim-ansible-yaml"]
 	path = .vim/pack/plugins/start/vim-ansible-yaml
 	url = https://github.com/chase/vim-ansible-yaml.git
+[submodule "submodule/zsh-kubectl-prompt"]
+	path = submodule/zsh-kubectl-prompt
+	url = https://github.com/superbrothers/zsh-kubectl-prompt.git

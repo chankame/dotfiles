@@ -30,5 +30,11 @@ RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 source ~/dotfiles/submodule/zsh-kubectl-prompt/kubectl.zsh
 RPROMPT='%F{blue}($ZSH_KUBECTL_PROMPT)%f'$RPROMPT
 
+stty -ixon
+bindkey '^R' history-incremental-search-backward
+bindkey '^S' history-incremental-search-forward
+bindkey '^P' history-beginning-search-backward
+bindkey '^N' history-beginning-search-forward
+
 # Environment variables
 export EDITOR=vim

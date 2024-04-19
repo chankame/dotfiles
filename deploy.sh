@@ -15,7 +15,7 @@ do
 	[ "$swp" = 'swp' ] && continue
 
 	if [ -e ~/$f ]; then
-		cp -r ~/$f "$BACKUP_DIR/$f"
+		mv ~/$f "$BACKUP_DIR/$f"
 	fi
 
 	ln -fsv $DOTFILES_DIR/$f ~

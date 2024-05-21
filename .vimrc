@@ -41,8 +41,9 @@ set statusline+=%h
 set statusline+=%w
 " これ以降は右寄せ表示
 set statusline+=%=
-" ファイルエンコーディング(設定されていない場合はエンコーディング)
-set statusline+=[ENC=%{&fileencoding?&fileencoding:&encoding}]
+" エンコーディング
+set statusline+=[ENC=%{&encoding}]
+set statusline+=[FENC=%{&fileencoding}]
 " ファイルフォーマット(改行コード)
 set statusline+=[FF=%{&fileformat}]
 " 現在行数/全行数

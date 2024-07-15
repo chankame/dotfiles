@@ -27,7 +27,11 @@ zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
 RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 
+source ~/dotfiles/submodule/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/dotfiles/submodule/zsh-completions/zsh-completions.plugin.zsh
+source ~/dotfiles/submodule/zsh-history-substring-search/zsh-history-substring-search.zsh
 source ~/dotfiles/submodule/zsh-kubectl-prompt/kubectl.zsh
+source ~/dotfiles/submodule/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 RPROMPT='%F{blue}($ZSH_KUBECTL_PROMPT)%f'$RPROMPT
 
 stty -ixon

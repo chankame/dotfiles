@@ -28,3 +28,6 @@
 [submodule "submodule/spaceship-prompt"]
 	path = submodule/spaceship-prompt
 	url = https://github.com/spaceship-prompt/spaceship-prompt.git
+[submodule "submodule/grml-etc-core"]
+	path = submodule/grml-etc-core
+	url = https://github.com/grml/grml-etc-core.git

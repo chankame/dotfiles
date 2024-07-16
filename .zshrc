@@ -1,3 +1,5 @@
+source ~/dotfiles/submodule/grml-etc-core/etc/zsh/zshrc
+
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1024

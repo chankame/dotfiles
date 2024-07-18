@@ -1,6 +1,10 @@
 " Note: Skip initialization for vim-tiny or vim-small.
 if 0 | endif
 
+if filereadable(expand("$HOME/dotfiles/submodule/grml-etc-core/etc/vim/vimrc"))
+  source $HOME/dotfiles/submodule/grml-etc-core/etc/vim/vimrc
+endif
+
 augroup BinaryXXD
   autocmd!
   autocmd BufReadPre *.bin let &binary=1

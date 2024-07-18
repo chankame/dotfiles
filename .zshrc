@@ -17,6 +17,9 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# grml prompt off
+prompt off
+
 PROMPT='%F{black}%K{white}%m:%~ %#%f%k '
 
 autoload -Uz vcs_info
@@ -35,6 +38,10 @@ source ~/dotfiles/submodule/zsh-history-substring-search/zsh-history-substring-s
 source ~/dotfiles/submodule/zsh-kubectl-prompt/kubectl.zsh
 source ~/dotfiles/submodule/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 RPROMPT='%F{blue}($ZSH_KUBECTL_PROMPT)%f'$RPROMPT
+
+# grml prompt override
+PS1=$PROMPT
+RPS1=$RPROMPT
 
 stty -ixon
 bindkey '^R' history-incremental-search-backward

@@ -51,3 +51,6 @@ bindkey '^N' history-beginning-search-forward
 
 # Environment variables
 export EDITOR=vim
+
+export DENO_INSTALL="$PWD/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"

@@ -56,3 +56,5 @@ set statusline+=[LOW=%l/%L]
 set laststatus=2
 syntax enable
 colorscheme iceberg
+
+let g:denops_disable_version_check = 1

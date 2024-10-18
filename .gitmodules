@@ -31,3 +31,6 @@
 [submodule "submodule/grml-etc-core"]
 	path = submodule/grml-etc-core
 	url = https://github.com/grml/grml-etc-core.git
+[submodule ".vim/pack/plugins/start/denops.vim"]
+	path = .vim/pack/plugins/start/denops.vim
+	url = https://github.com/vim-denops/denops.vim.git

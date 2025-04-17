@@ -58,3 +58,8 @@ syntax enable
 colorscheme iceberg
 
 let g:denops_disable_version_check = 1
+
+if executable('deno')
+  packadd denops.vim
+endif
+

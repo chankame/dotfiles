@@ -32,20 +32,20 @@
 	path = submodule/grml-etc-core
 	url = https://github.com/grml/grml-etc-core.git
 [submodule ".vim/pack/plugins/start/denops.vim"]
-	path = .vim/pack/plugins/start/denops.vim
+	path = .vim/pack/plugins/opt/denops.vim
 	url = https://github.com/vim-denops/denops.vim.git
 [submodule ".vim/pack/plugins/start/ddu.vim"]
-	path = .vim/pack/plugins/start/ddu.vim
+	path = .vim/pack/plugins/opt/ddu.vim
 	url = https://github.com/Shougo/ddu.vim.git
 [submodule ".vim/pack/plugins/start/ddu-ui-ff"]
-	path = .vim/pack/plugins/start/ddu-ui-ff
+	path = .vim/pack/plugins/opt/ddu-ui-ff
 	url = https://github.com/Shougo/ddu-ui-ff.git
 [submodule ".vim/pack/plugins/start/ddu-source-file_rec"]
-	path = .vim/pack/plugins/start/ddu-source-file_rec
+	path = .vim/pack/plugins/opt/ddu-source-file_rec
 	url = https://github.com/Shougo/ddu-source-file_rec.git
 [submodule ".vim/pack/plugins/start/ddu-filter-matcher_substring"]
-	path = .vim/pack/plugins/start/ddu-filter-matcher_substring
+	path = .vim/pack/plugins/opt/ddu-filter-matcher_substring
 	url = https://github.com/Shougo/ddu-filter-matcher_substring.git
 [submodule ".vim/pack/plugins/start/ddu-kind-file"]
-	path = .vim/pack/plugins/start/ddu-kind-file
+	path = .vim/pack/plugins/opt/ddu-kind-file
 	url = https://github.com/Shougo/ddu-kind-file.git

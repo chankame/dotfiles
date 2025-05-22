@@ -57,14 +57,21 @@ set laststatus=2
 syntax enable
 colorscheme iceberg
 
-filetype plugin indent on
+" インデント
+set autoindent
+set smartindent
+set cindent
+set smarttab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+
 augroup FileTypeIndent
   autocmd!
-  autocmd FileType cs     setlocal tabstop=4 softtabstop=4 shiftwidth=4
-  autocmd FileType css    setlocal tabstop=4 softtabstop=4 shiftwidth=4
-  autocmd FileType html   setlocal tabstop=4 softtabstop=4 shiftwidth=4
-  autocmd FileType php    setlocal tabstop=4 softtabstop=4 shiftwidth=4
-  autocmd FileType python setlocal tabstop=4 softtabstop=4 shiftwidth=4
+  filetype plugin on
+  filetype indent on
+  "sw=shiftwidth, sts=softtabstop, ts=tabstop, et=expandtab
+  autocmd FileType sh setlocal ts=2 sw=2 sts=2 et
 augroup END
 
 let g:denops_disable_version_check = 1

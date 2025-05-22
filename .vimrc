@@ -57,9 +57,39 @@ set laststatus=2
 syntax enable
 colorscheme iceberg
 
+filetype plugin indent on
+augroup FileTypeIndent
+  autocmd!
+  autocmd FileType cs     setlocal tabstop=4 softtabstop=4 shiftwidth=4
+  autocmd FileType css    setlocal tabstop=4 softtabstop=4 shiftwidth=4
+  autocmd FileType html   setlocal tabstop=4 softtabstop=4 shiftwidth=4
+  autocmd FileType php    setlocal tabstop=4 softtabstop=4 shiftwidth=4
+  autocmd FileType python setlocal tabstop=4 softtabstop=4 shiftwidth=4
+augroup END
+
 let g:denops_disable_version_check = 1
 
 if executable('deno')
   packadd denops.vim
+  packadd ddu.vim
+  packadd ddu-filter-matcher_substring
+  packadd ddu-kind-file
+  packadd ddu-source-file_rec
+  packadd ddu-ui-ff
+
+  call ddu#custom#patch_global(#{
+    \   ui: 'ff',
+    \   sources: [#{name: 'file_rec', params: {}}],
+    \   sourceOptions: #{
+    \     _: #{
+    \       matchers: ['matcher_substring'],
+    \     },
+    \   },
+    \   kindOptions: #{
+    \     file: #{
+    \       defaultAction: 'open',
+    \     },
+    \   }
+    \ })
 endif
 

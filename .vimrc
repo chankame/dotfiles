@@ -62,15 +62,13 @@ set autoindent
 set smartindent
 set cindent
 set smarttab
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
 
 augroup FileTypeIndent
   autocmd!
   filetype plugin on
   filetype indent on
   "sw=shiftwidth, sts=softtabstop, ts=tabstop, et=expandtab
+  autocmd FileType cs setlocal ts=4 sw=4 sts=4
   autocmd FileType sh setlocal ts=2 sw=2 sts=2 et
 augroup END
 

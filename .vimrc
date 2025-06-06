@@ -69,6 +69,10 @@ augroup FileTypeIndent
   filetype indent on
   "sw=shiftwidth, sts=softtabstop, ts=tabstop, et=expandtab
   autocmd FileType cs setlocal ts=4 sw=4 sts=4
+  autocmd FileType css setlocal ts=4 sw=4 sts=4
+  autocmd FileType html setlocal ts=4 sw=4 sts=4
+  autocmd FileType javascript setlocal ts=4 sw=4 sts=4
+  autocmd FileType php setlocal ts=4 sw=4 sts=4
   autocmd FileType sh setlocal ts=2 sw=2 sts=2 et
 augroup END
 

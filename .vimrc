@@ -103,3 +103,6 @@ if executable('deno')
     \ })
 endif
 
+if executable('node')
+  packadd coc.nvim
+endif

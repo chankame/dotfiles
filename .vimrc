@@ -105,4 +105,20 @@ endif
 
 if executable('node')
   packadd coc.nvim
+  
+  " タブで補完候補を移動
+  inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+  inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+  
+  " Enterで補完確定
+  inoremap <silent><expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
+  
+  " 定義ジャンプ
+  nmap <silent> gd <Plug>(coc-definition)
+  
+  " リファレンス検索
+  nmap <silent> gr <Plug>(coc-references)
+  
+  " シンボルのドキュメント表示
+  nmap <silent> K :call CocActionAsync('doHover')<CR>
 endif

@@ -1,0 +1,21 @@
+{
+  "clangd.path": "clangd",
+  "clangd.fallbackFlags": ["-std=c++20"],
+  "clangd.arguments": [
+    "--background-index",
+    "--clang-tidy",
+    "--completion-style=detailed",
+    "--header-insertion=iwyu"
+  ],
+  "suggest.detailMaxLength": 120,
+  "suggest.snippetIndicator": "⚡",
+
+  "languageserver": {
+    "csharp": {
+      "command": "omnisharp",
+      "filetypes": ["cs"],
+      "rootPatterns": [".sln", ".csproj"],
+      "trace.server": "verbose"
+    }
+  }
+}

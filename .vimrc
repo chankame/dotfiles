@@ -70,6 +70,7 @@ augroup FileTypeIndent
   "sw=shiftwidth, sts=softtabstop, ts=tabstop, et=expandtab
   autocmd FileType cs setlocal ts=4 sw=4 sts=4
   autocmd FileType css setlocal ts=4 sw=4 sts=4
+  autocmd FileType go setlocal ts=4 sw=4 sts=4
   autocmd FileType html setlocal ts=4 sw=4 sts=4
   autocmd FileType javascript setlocal ts=4 sw=4 sts=4
   autocmd FileType php setlocal ts=4 sw=4 sts=4

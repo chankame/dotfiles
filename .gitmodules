@@ -49,3 +49,6 @@
 [submodule ".vim/pack/plugins/start/ddu-kind-file"]
 	path = .vim/pack/plugins/opt/ddu-kind-file
 	url = https://github.com/Shougo/ddu-kind-file.git
+[submodule ".vim/pack/plugins/opt/coc.nvim"]
+	path = .vim/pack/plugins/opt/coc.nvim
+	url = https://github.com/neoclide/coc.nvim

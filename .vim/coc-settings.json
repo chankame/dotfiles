@@ -17,5 +17,7 @@
       "rootPatterns": [".sln", ".csproj"],
       "trace.server": "verbose"
     }
-  }
+  },
+  "omnisharp.useModernNet": true,
+  "omnisharp.path": "omnisharp"
 }
